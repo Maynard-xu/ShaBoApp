@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            About
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="about" padding="">
+    <ion-list>
+    	<ion-item *ngFor="let item of items" (click)="openPage(item)">
+    		<ion-avatar item-left>
+    			<img src="../images/{{item.icon}}.jpg">
+    		</ion-avatar>
+    		<h2>{{item.name}}</h2>
+    		<p>{{item.text}}</p>
+    	</ion-item>
+
+    </ion-list>
+</ion-content>

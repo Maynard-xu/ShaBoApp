@@ -1,0 +1,44 @@
+<ion-header >
+    <ion-navbar>
+        <ion-title>
+            用户中心
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="contact">
+    <ion-list>
+        <ion-item>
+            <ion-label  floating="">
+                name
+            </ion-label>
+            <ion-input [(ngModel)]="user.username" type="text" value="">
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating="">
+                password
+            </ion-label>
+            <ion-input [(ngModel)]="user.password" type="password" value="">
+            </ion-input>
+        </ion-item>
+    </ion-list>
+    <button (click)="login()" block="">
+        login
+        <ion-icon name="person-add">
+        </ion-icon>
+    </button>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <div class="textAlignRight marginTop10">
+                    <button clear="" dark="" (click)="presentProfileModal()">
+                        注册
+                    </button>
+                </div>
+            </ion-col>
+        </ion-row>
+       <!--  <ion-row>
+        <img src ="{{user.headface}}" (click)="uploadImage()">
+        </ion-row> -->
+    </ion-grid>
+</ion-content>
