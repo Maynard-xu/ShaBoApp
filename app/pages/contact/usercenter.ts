@@ -17,7 +17,7 @@ export class UserCenter {
 	public user={
 		username : '',
 		password : '',
-		headface :"/images/1.jpg"	
+		headface :"images/1.jpg"	
 
 	}
 
@@ -28,14 +28,14 @@ export class UserCenter {
 		public toast:ToastController) {
 		if(localStorage.getItem('Logined')){
            //已经登录的状态，显示用户信息
-           this.user.headface="/images/" + localStorage.getItem("username") + ".jpg";
+           this.user.headface="images/" + localStorage.getItem("username") + ".jpg";
            console.log('10');
 
        }
        else{
        	let modal = this.modalC.create(ContactPage);
        	modal.onDidDismiss(data=>{
-       	this.user.headface="/images/" + data + ".jpg";
+       	this.user.headface="images/" + data + ".jpg";
        	console.log('11');	
        	});
        	modal.present();
@@ -50,7 +50,7 @@ export class UserCenter {
    	localStorage.setItem("username",'');
    	let modal = this.modalC.create(ContactPage);
    	modal.onDidDismiss(data=>{
-   		this.user.headface="/images/" + data + ".jpg";
+   		this.user.headface="images/" + data + ".jpg";
 
    		// console.log('12');
 
