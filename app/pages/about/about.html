@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header >
     <ion-navbar>
         <ion-title>
             About
@@ -6,14 +6,30 @@
     </ion-navbar>
 </ion-header>
 <ion-content class="about" padding="">
-    <ion-list>
-    	<ion-item *ngFor="let item of items" (click)="openPage(item)">
-    		<ion-avatar item-left>
-    			<img src="images/{{item.icon}}.jpg">
-    		</ion-avatar>
-    		<h2>{{item.name}}</h2>
-    		<p>{{item.text}}</p>
-    	</ion-item>
 
+    <ion-list>
+        <ion-list-header>
+            Hobbits
+        </ion-list-header>
+        <!--*ngFor="let item of items"-->
+    	<a ion-item  (click)="openModal({charNum:0})">
+            Gollum
+    		<!--<ion-avatar item-left>
+    			<img src="images/{{item.icon}}.jpg">-->
+                <!--images/{{item.icon}}.jpg-->
+    		<!--</ion-avatar>-->
+            <!--<h2>张三</h2>
+    		<p>111111</p>-->
+    		<!--<h2>{{item.name}}</h2>
+    		<p>{{item.text}}</p>-->
+    	</a>
+
+        <a ion-item  (click)="openModal({charNum:1})">
+            Frodo Banggins
+        </a>
+
+         <a ion-item  (click)="openModal({charNum:2})">
+            Sea
+        </a>
     </ion-list>
 </ion-content>
