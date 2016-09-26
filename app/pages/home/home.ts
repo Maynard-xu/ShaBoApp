@@ -8,4 +8,18 @@ export class HomePage {
   constructor(private navCtrl: NavController) {
   
   }
+  count=0;
+  plun=0;
+  zan(){
+    
+    this.count++;
+
+
+  }
+   pl(){
+    
+    this.plun++;
+
+
+  }
 }

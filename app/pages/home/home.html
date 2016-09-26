@@ -30,18 +30,19 @@
                 </p>
             </ion-card-content>
             <ion-item>
-                <button clear="" item-left="" primary="">
+                <button clear="" item-left="" primary="" (click)="zan()">
+                    
                     <ion-icon name="thumbs-up">
                     </ion-icon>
                     <div>
-                        111 赞
+                        {{count}}赞
                     </div>
                 </button>
-                <button clear="" item-left="" primary="">
+                <button clear="" item-left="" primary="" (click)="pl()">
                     <ion-icon name="text">
                     </ion-icon>
                     <div>
-                        100 评论
+                        {{plun}}评论
                     </div>
                 </button>
                 <ion-note item-right="">
