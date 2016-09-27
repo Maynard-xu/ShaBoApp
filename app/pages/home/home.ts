@@ -6,18 +6,18 @@ import {NavController} from 'ionic-angular';
 })
 export class HomePage {
   constructor(private navCtrl: NavController) {
-  
+
   }
-  count=0;
-  plun=0;
-  zan(){
-    
+  count = 0;
+  plun = 0;
+  zan() {
+
     this.count++;
 
 
   }
-   pl(){
-    
+  pl() {
+
     this.plun++;
 
 

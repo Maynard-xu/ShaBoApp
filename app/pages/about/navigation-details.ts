@@ -51,7 +51,7 @@ export class itemPage {
 		this.character = characters[this.params.get('charNum')];
 
 	}
-	dismiss(){
+	dismiss() {
 		this.viewCtrl.dismiss();
 
 	}

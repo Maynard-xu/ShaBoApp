@@ -8,7 +8,7 @@ import {App, NavController} from 'ionic-angular';
 import {ViewChild} from '@angular/core';
 // @Component({
 //   template: '<ion-nav [root]="rootPage"></ion-nav>',
-  
+
 // })
 // export class MyApp {
 //   static get parameters(){

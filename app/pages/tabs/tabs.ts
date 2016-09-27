@@ -5,14 +5,14 @@ import {UserCenter} from '../contact/usercenter';
 // import {ContactPage} from '../contact/contact';
 
 import {Tabs} from 'ionic-angular';
-import {Injectable,ViewChild} from '@angular/core';
+import {Injectable, ViewChild} from '@angular/core';
 
 @Component({
   templateUrl: 'build/pages/tabs/tabs.html'
 })
 export class TabsPage {
 
-  @ViewChild('myTabs')  tabRef:Tabs;
+  @ViewChild('myTabs') tabRef: Tabs;
   private tab1Root: any;
   private tab2Root: any;
   private tab3Root: any;
@@ -26,7 +26,7 @@ export class TabsPage {
     this.tab3Root = UserCenter;
   }
 
-  ionViewDidEnter(){
-    this.tabRef.select(0);
+  ionViewDidEnter() {
+    this.tabRef.select(2);
   }
 }
